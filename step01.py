@@ -188,8 +188,23 @@ app.layout = html.Div([
                     ], className="six columns pretty_container"),
             ], className="row"), 
         
-#####################
+########################
+###### IFRAME
+#####################        
+        ## URL pagina web
+        # html.Div([
+        #     html.H3('Fluorish1'),
+        # html.Iframe(  src = 'https://public.flourish.studio/visualisation/2147005/',height=600,width=1024)
+        # ])        
 
+#<iframe src='https://flo.uri.sh/visualisation/2147005/embed' frameborder='0' scrolling='no' style='width:100%;height:600px;'></iframe>
+        ##Iframe link
+        html.Div([
+            html.H3('Fluorish1'),
+        html.Iframe(src = 'https://flo.uri.sh/visualisation/2147005/embed',height=600,width=1024)
+        ]),        
+        
+#####################
         
         ])
     ],id="main")
